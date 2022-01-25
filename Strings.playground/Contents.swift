@@ -11,12 +11,15 @@ fact.count
 
 fact += ", it has a better memory management"
 
+fact.count
+
 dev.append(" by Apple")
 
 author.lowercased()
 
 author.uppercased()
 
+//string[Index]
 author[author.startIndex]
 
 author[author.index(before: author.endIndex)]

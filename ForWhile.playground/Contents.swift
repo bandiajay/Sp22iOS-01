@@ -21,6 +21,7 @@ var totalNumbers = 100
 var sum:Int = 0
 for number in 1...totalNumbers {
     sum += number
+    //sum = sum + number
 }
 print("The sum of first \(totalNumbers) is \(sum)")
 
@@ -83,16 +84,16 @@ print()
 
 var number1 = 1
 repeat {
-    print(number,terminator:" ")
-    number += 1
-} while number <= 10
+    print(number1,terminator:" ")
+    number1 += 1
+} while number1 <= 10
 
 
 var number2 = 3
 repeat {
     print("Hello World!!")
-    number+=1
-} while (number <= 2)
+    number2+=1
+} while (number2 <= 2)
 
     
 
