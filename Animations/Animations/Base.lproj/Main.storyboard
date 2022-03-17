@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hello" translatesAutoresizingMaskIntoConstraints="NO" id="B96-DQ-roU">
+                                <rect key="frame" x="87" y="162" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="gaq-zA-aOL"/>
+                                    <constraint firstAttribute="height" constant="128" id="sdr-y7-Zq1"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkk-hA-0py">
+                                <rect key="frame" x="147" y="457" width="120" height="58"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="3fm-iE-ohi"/>
+                                    <constraint firstAttribute="height" constant="58" id="J7J-Av-j1H"/>
+                                </constraints>
+                                <state key="normal" title="Sad">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="sadButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xvS-Al-vEp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Kr-va-VzA">
+                                <rect key="frame" x="147" y="549" width="120" height="58"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="dwL-GB-D6o"/>
+                                    <constraint firstAttribute="height" constant="58" id="eXU-ib-7tM"/>
+                                </constraints>
+                                <state key="normal" title="Angry">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="angryButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vSD-DY-eYQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZs-jL-EaE">
+                                <rect key="frame" x="147" y="649" width="120" height="58"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="3xW-9B-egK"/>
+                                    <constraint firstAttribute="width" constant="120" id="8ky-PZ-51P"/>
+                                </constraints>
+                                <state key="normal" title="Shake Me!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="shakeMeButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rrY-Rx-Gn7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3g-Oh-Fq0">
+                                <rect key="frame" x="147" y="756" width="120" height="58"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Edd-k3-tGz"/>
+                                    <constraint firstAttribute="height" constant="58" id="PI5-O8-7qR"/>
+                                </constraints>
+                                <state key="normal" title="Show">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FNl-Re-86Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pU5-q8-5Pr">
+                                <rect key="frame" x="147" y="357" width="120" height="58"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="idX-So-pIa"/>
+                                    <constraint firstAttribute="width" constant="120" id="qnC-Eu-vE1"/>
+                                </constraints>
+                                <state key="normal" title="Happy">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="happyButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="68r-PA-zKQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="B96-DQ-roU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="118" id="3iT-P4-X6N"/>
+                            <constraint firstItem="B96-DQ-roU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B66-lQ-dtT"/>
+                            <constraint firstItem="e3g-Oh-Fq0" firstAttribute="top" secondItem="KZs-jL-EaE" secondAttribute="bottom" constant="49" id="Rf8-W9-Q7T"/>
+                            <constraint firstItem="pU5-q8-5Pr" firstAttribute="top" secondItem="B96-DQ-roU" secondAttribute="bottom" constant="67" id="Tfh-kO-V5y"/>
+                            <constraint firstItem="Rkk-hA-0py" firstAttribute="top" secondItem="pU5-q8-5Pr" secondAttribute="bottom" constant="42" id="VdG-Fb-Gyf"/>
+                            <constraint firstItem="KZs-jL-EaE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZJ5-97-PhA"/>
+                            <constraint firstItem="2Kr-va-VzA" firstAttribute="top" secondItem="Rkk-hA-0py" secondAttribute="bottom" constant="34" id="cWR-Wc-V1v"/>
+                            <constraint firstItem="KZs-jL-EaE" firstAttribute="top" secondItem="2Kr-va-VzA" secondAttribute="bottom" constant="42" id="kLr-dP-05d"/>
+                            <constraint firstItem="e3g-Oh-Fq0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="plL-HV-6CM"/>
+                            <constraint firstItem="Rkk-hA-0py" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q9y-Ui-Jqy"/>
+                            <constraint firstItem="pU5-q8-5Pr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tcp-iP-hnQ"/>
+                            <constraint firstItem="2Kr-va-VzA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="we3-Lm-ABp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="angryOutlet" destination="2Kr-va-VzA" id="XCT-Iz-JFt"/>
+                        <outlet property="happyOutlet" destination="pU5-q8-5Pr" id="qaY-fF-0Uh"/>
+                        <outlet property="imageOutlet" destination="B96-DQ-roU" id="zo8-0d-pdy"/>
+                        <outlet property="sadOutlet" destination="Rkk-hA-0py" id="E5x-Fy-viE"/>
+                        <outlet property="shakeMeOutlet" destination="KZs-jL-EaE" id="JJO-sn-YbB"/>
+                        <outlet property="showOutlet" destination="e3g-Oh-Fq0" id="vFP-6K-lTX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hello" width="210" height="158"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
